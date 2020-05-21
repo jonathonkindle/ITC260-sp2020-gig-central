@@ -1,0 +1,199 @@
+/**
+ * public/css/custom_styles.css
+ *
+ * css styles for forms
+ *
+ * @package GigCentral
+ * @subpackage Home
+ * @author Elizabeth Jones, Craig Peterson <craig.peterson@seattlecentral.edu>
+ * @version 1.1 2019/06/03
+ * @link
+ * @license http://www.apache.org/licenses/LICENSE-2.0
+ * @see application/view/themes/bootswatch/header.php
+ * @todo none
+ */
+body {
+    /* min-width: 500px; /* this rule breaks responsiveness... */
+}
+
+h2 {
+    padding-bottom:2rem;
+}
+
+.text-xs-center {
+        text-align: center;
+}
+
+.g-recaptcha {
+    display: inline-block;
+}
+
+.navbar-brand {
+    padding: 5px 15px 0 10px;
+}
+
+input#userfile {
+    height: auto;
+}
+
+/*-------FAQ Accordian CSS-------*/
+.FAQ-wrapper {
+	margin: auto;
+	width: 75%;
+}
+
+.half {
+	float: left;
+	width: 100%;
+	padding: 0 1em;
+}
+
+  /* Accordian styles */
+.tab {
+	position: relative;
+	margin-bottom: 1px;
+	width: 100%;
+	color: #fff;
+	overflow: hidden;
+}
+
+/*Hide the checkboxes on the FAQ page*/
+.faq-checkbox {
+	display: none;
+}
+
+.blue label {
+	background: #2980b9;
+    margin-bottom: 0;
+}
+
+.tab-content {
+	max-height: 0;
+	overflow: hidden;
+	background: #1abc9c;
+	-webkit-transition: max-height .35s;
+	-o-transition: max-height .35s;
+	transition: max-height .35s;
+}
+
+.blue .tab-content {
+	background: #3498db;
+    margin-bottom: 1rem;
+}
+
+.tab-content p {
+	margin: 1em;
+	  height: auto;
+}
+
+
+/*-------GIG LIST STYLES-------*/
+.gig-search form {
+    margin-top: 2rem;
+}
+
+.gig-search form:first-of-type {
+    margin-top:0;
+    padding-top:0;
+}
+
+.gig-search h4 {
+    margin-top:0;
+}
+
+.gig-list {
+    border-left: 1px solid #18bc9c;
+}
+
+.gig-list h3:first-of-type {
+    margin-top:0;
+}
+
+.gig-list-item {
+    padding: 1rem;
+    background: #fff;
+    margin: 1rem 0;
+    margin-top: 0px;
+}
+
+/* gig-list items */
+.gig-list-item:first-of-type {
+    margin-top:0;
+}
+.gig-list-header{
+    background-color: #18bc9c;
+    padding: 1rem;
+}
+.gig-list-title{
+    margin: 0px;
+}
+.gig-list-subtitle{
+    font-style: italic;
+}
+.gig-list-subheader.text-info{
+    margin: 0px;
+}
+/* gig-list forms */
+.gig-list-form h4{
+    background-color: #18bc9c;
+    padding: 1rem;
+    margin: 0;
+}
+.gig-list-form .form-group{
+    background-color: white;
+    margin: 0;
+}
+.gig-list-form label{
+    background-color: rgba(0,0,0,0);
+    margin: 0;
+    padding: 0;
+}
+.gig-list-form .form-group{
+    padding: 1rem;
+    padding-top: 0rem;
+}
+.gig-list-form .form-group.input-container{
+    padding-top: 1rem;
+}
+.gig-list-form .button-container{
+    padding-top: 1rem;
+}
+
+/* ============================ */
+/* Gig Dashboard Styles         */
+/* see views/gigs/dashboard.php */
+/* ============================ */
+.dashboard .gig-type {
+    background-color: #18bc9c;
+    padding: 10px;
+}
+
+.dashboard .gig-type h3 {
+    margin: 0;
+    white-space:nowrap;
+    overflow:visible;
+}
+
+.dashboard p {
+    margin-bottom:2rem;
+}
+
+
+@media only screen and (max-width: 730px) {
+
+.gig-search form {
+    margin-top: 0;
+    padding-top: 0;
+    max-width: 45%;
+    min-width: 235px;
+    float: right;
+    padding-right: 20px;
+    }
+
+.gig-list {
+    border-left: none;
+    border-top: 2px solid #2c3e4f;
+    padding-top: 10px;
+    margin-top: 340px;
+    }
+}

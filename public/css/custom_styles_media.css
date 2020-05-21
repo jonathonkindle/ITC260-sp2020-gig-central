@@ -1,0 +1,94 @@
+/**
+ * public/css/custom_styles_media.css
+ *
+ * css style for @media
+ *
+ * @package GigCentral
+ * @subpackage Home
+ * @author Elizabeth Jones
+ * @version 1.0 2019/5/16
+ * @link
+ * @license http://www.apache.org/licenses/LICENSE-2.0
+ * @see application/view/themes/bootswatch/header.php
+ * @todo consolidate @media styles
+ */
+
+/********** Media Queries 425px ***********/
+@media (max-width: 425px) {
+	.g-recaptcha{
+		transform:scale(0.77);
+		-webkit-transform:scale(0.77);
+		transform-origin:0 0;
+		-webkit-transform-origin:0 0;
+		margin: 0;
+	}
+}
+/********** End Media Queries 425px ***********/
+
+/********** Media Queries 580px ***********/
+
+@media (min-width: 580px){
+    .main-box{
+        padding-bottom: 35%;
+    }
+}
+/********** End Media Queries 580px ***********/
+
+/********** Media Queries 768px ***********/
+
+@media (min-width: 768px){
+    .main-box{
+        padding-bottom: 30%;
+    }
+    
+    .inner-box:hover h1{
+    font-size: 2em;
+    }
+    
+    .inner-box:hover .bar{
+        display: block;
+    }
+}
+/********** End Media Queries 768px ***********/
+
+/********** Media Queries 992px ***********/
+
+@media (min-width: 992px) {
+    .main-box{
+        padding-bottom: 30%;
+    }
+    
+    .inner-box h1{
+        font-size: 3em;
+    }
+}
+/********** End Media Queries 992px ***********/
+
+/********** Media Queries 1199px ***********/
+@media (max-width: 1199px) {
+    .g-recaptcha {
+        margin-left: 15px;
+    }
+    .contact-btn {
+        margin-left: -15px;
+    }
+}
+/********** End Media Queries 992px ***********/
+
+/********** Media Queries 1200px ***********/
+
+@media (min-width: 1200px) {
+    .main-box{
+        padding-bottom: 25%;
+    }
+    
+    .inner-box h1{
+        font-size: 5em;
+    }
+    
+    .contact-btn {
+        margin-left: 34%;
+    }
+}
+
+
